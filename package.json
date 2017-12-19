@@ -1,0 +1,12 @@
+{
+    "name": "config-node",
+    "version": "0.0.1",
+    "description"  : "A sample node for node-red",
+    "keywords": [ "node-red" ],
+    "node-red": {
+        "nodes": {
+            "config-node": "config-node/config-node.js"
+        }
+    },
+    "dependencies": {}
+}

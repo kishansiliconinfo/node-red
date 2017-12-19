@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('config-node',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            number: {value:""},
+            amount: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"config-node";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="config-node">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>    
+    <div class="form-row">    
+        <label for="node-input-number"><i class="icon-tag"></i>Number</label>
+        <input type="text" id="node-input-number" placeholder="Number">
+    </div>    
+    <div class="form-row">    
+        <label for="node-input-amount"><i class="icon-tag"></i>Amount</label>
+        <input type="text" id="node-input-amount" placeholder="Amount">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="config-node">
+    <p>A simple node that calculate and return the response based on Number and amount properies.</p>
+</script>
